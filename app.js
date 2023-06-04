@@ -1,5 +1,6 @@
 
 const pimg = document.querySelector(".overlay");
+const plank = document.querySelector("#plank")
 
 
 const check = () => {
@@ -16,6 +17,9 @@ setInterval(check, 500)
 const handleClick = (index) => {
     const img = document.querySelectorAll(".main-img")[index];
     img.style.zIndex = "2";
+    if(index === 1){
+        plank.play()
+    }
     return false;
 }
 
