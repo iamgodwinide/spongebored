@@ -29,7 +29,7 @@ area{
   border: none;
   outline: none;
   cursor: pointer;
-
+  z-index: -1;
 }
 
 .arrow-wrap i{

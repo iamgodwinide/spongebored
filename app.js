@@ -22,7 +22,7 @@ arrow.addEventListener("click", () => {
         if(index == 0) el.style.zIndex = 2;
         else el.style.zIndex = 1;
     });
-    arrow.style.zIndex = 0;
+    arrow.style.zIndex = -1;
     plank.pause();
     plank.currentTime = 0;
     bubble.pause();
