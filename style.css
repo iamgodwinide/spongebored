@@ -11,9 +11,10 @@
   left: 0;
 }
 
-.main-img:nth-child(1){
+.main-img .first{
   z-index: 1;
 }
+
 
 area{
   cursor: pointer;
