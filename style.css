@@ -29,11 +29,13 @@ area{
   border: none;
   outline: none;
   cursor: pointer;
+
 }
 
 .arrow-wrap i{
   font-size: 8em;
   color: rgb(212, 15, 71);
+  text-shadow: 3px 3px 10px #fff;
 }
 
 .overlay{
@@ -42,4 +44,16 @@ area{
   height: 100%;
   z-index: 100000;
   display: none;
+}
+
+
+@media screen and (max-width: 1024px) {
+  .arrow-wrap{
+    left: 2em;
+    top: 10%;
+  }
+
+  .arrow-wrap i{
+    font-size: 5em;
+  }
 }
