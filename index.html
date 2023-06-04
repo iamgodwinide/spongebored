@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="./cursor.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="SPONGEYCOIN" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content="ANALGAZERS" />
+    <meta property="twitter:description" content="“SPONGEYCOIN" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="apple-touch-icon" href="./cursor.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>“SPONGEYCOIN</title>
+  </head>
+  <body>
+    <img class="overlay" src="./img/rotate.png" alt="" />
+    <div class="main">
+      <div class="main">
+        <img
+          class="main-img"
+          src="./img/SPONGEY - SITE.png"
+          usemap="#image-map"
+        />
+        <img class="main-img" src="./img/FOG_BACKGROUND.png" />
+        <img class="main-img" src="./img/FAQ.png" />
+        <img class="main-img" src="./img/socials.png" usemap="#image-map2" />
+
+        <map name="image-map">
+          <area
+            coords="741,484,1114,992"
+            shape="rect"
+            onclick="handleClick(1)"
+          />
+          <area
+            coords="2260,486,2552,1018"
+            shape="rect"
+            onclick="handleClick(2)"
+          />
+          <area
+            coords="2803,550,3095,1029"
+            shape="rect"
+            onclick="handleClick(3)"
+          />
+        </map>
+
+        <map name="image-map2">
+          <area
+            target="_blank"
+            alt=""
+            title=""
+            href="https://twitter.com/spongeyerc"
+            coords="337,918,1321,2125"
+            shape="rect"
+          />
+          <area
+            target="_blank"
+            alt=""
+            title=""
+            href="#"
+            coords="1521,954,2420,2120"
+            shape="rect"
+          />
+          <area
+            target="_blank"
+            alt=""
+            title=""
+            href="#"
+            coords="2725,965,3648,2145"
+            shape="rect"
+          />
+        </map>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.4.slim.min.js"
+      integrity="sha256-a2yjHM4jnF9f54xUQakjZGaqYs/V1CYvWpoqZzC2/Bw="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./rwdImageMaps.js"></script>
+    <script>
+      $(document).ready(function (e) {
+        $("img[usemap]").rwdImageMaps();
+      });
+    </script>
+    <script src="./app.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
